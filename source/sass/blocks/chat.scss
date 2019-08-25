@@ -1,0 +1,68 @@
+.chat {
+  display: flex;
+  border-radius: 5px;
+}
+
+.chat__products {
+  position: relative;
+  background-color: $main-bg;
+  flex-basis: 24%;
+}
+
+.chat__header {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid $white;
+}
+
+.chat__close-btn {
+  position: absolute;
+  top: 19px;
+  right: 23px;
+  border: none;
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $dark-gray;
+    top: 6px;
+    left: -2px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.chat__nav {
+  margin-left: 13px;
+  margin-top: 13px;
+}
+
+.chat__nav-title {
+  font-size: 10px;
+  margin: 0 0 8px 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chat__messages-wrapper {
+  flex-basis: 76%;
+}

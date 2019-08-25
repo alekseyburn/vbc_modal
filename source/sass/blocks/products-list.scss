@@ -1,0 +1,87 @@
+.products-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  color: $sup-text;
+}
+
+.products-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 25px 13px 11px;
+
+  background-color: $white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.products-list__row {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    justify-content: normal;
+  }
+}
+
+.products-list__number {
+  font-weight: 700;
+}
+
+.products-list__time {
+  margin-left: auto;
+
+  font-weight: 700;
+}
+
+.products-list__name {
+  margin-right: 35px;
+  color: $black;
+}
+
+.fa-arrow-right {
+  margin-right: 5px;
+  color: $icons-color;
+}
+
+.products-list__link {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+
+.fa-comment-alt,
+.fa-exclamation-triangle {
+  margin-right: 3px;
+
+  font-size: 14px;
+  color: $icons-color;
+}
+
+.products-list__counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+
+  font-weight: 700;
+  color: $dark-gray;
+
+  background-color: $message-bg-dark;
+  border-radius: 50%;
+
+  &--error {
+    color: $white;
+
+    background-color: $red;
+  }
+}

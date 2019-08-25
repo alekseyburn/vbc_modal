@@ -6,6 +6,11 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="Description" content="Чат ВБЦ">
   <title>Чат ВБЦ</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto700.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
   <section class="chat">
@@ -14,14 +19,18 @@
       <h2 class="chat__header">Бизнес-чат</h2>
       <button class="chat__close-btn" type="button" aria-label="Закрыть чат"></button>
       <div class="chat__nav">
-        <h3 class="chat__nav--title">Продукты</h3>
+        <h3 class="chat__nav-title">Продукты</h3>
         <ul class="chat__products products-list">
           <li class="products-list__item">
-            <span class="products-list__number">БГ(№345678)</span>
-            <time class="products-list__time" datetime="21.06.2019 10:40">21.06 10:40</time>
-            <b class="products-list__name">Маркетплейс ВБЦ</b>
-            <a class="products-list__link" href="#" aria-label="Непрочитанные сообщения">3</a>
-            <a class="products-list__link products-list__link--error" href="#" aria-label="Ошибки">1</a>
+            <div class="products-list__row">
+              <span class="products-list__number">БГ(№345678)</span>
+              <time class="products-list__time" datetime="21.06.2019 10:40">21.06 10:40</time>
+            </div>
+            <div class="products-list__row">
+              <b class="products-list__name"><i class="fas fa-arrow-right"></i>Маркетплейс ВБЦ</b>
+              <a class="products-list__link" href="#" aria-label="Непрочитанные сообщения"><i class="fas fa-comment-alt"></i><span class="products-list__counter products-list__counter--message">3</span></a>
+              <a class="products-list__link" href="#" aria-label="Ошибки"><i class="fas fa-exclamation-triangle"></i><span class="products-list__counter products-list__counter--error">1</span></a>
+            </div>
           </li>
         </ul>
       </div>

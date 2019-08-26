@@ -1,5 +1,6 @@
 .products-list {
   @include reset-list;
+
   display: flex;
   flex-direction: column;
 
@@ -9,7 +10,7 @@
 .products-list__item {
   display: flex;
   flex-direction: column;
-  padding: 11px 25px 13px 11px;
+  padding: 11px 25px 12px 11px;
 
   background-color: $white;
   border-top-left-radius: 5px;
@@ -21,7 +22,7 @@
   justify-content: space-between;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   &:last-child {
@@ -40,12 +41,14 @@
 }
 
 .products-list__name {
-  margin-right: 35px;
+  flex-grow: 1;
+
   color: $black;
 }
 
 .fa-arrow-right {
   margin-right: 5px;
+
   color: $icons-color;
 }
 
@@ -60,7 +63,7 @@
 
 .fa-comment-alt,
 .fa-exclamation-triangle {
-  margin-right: 3px;
+  margin-right: 2px;
 
   font-size: 14px;
   color: $icons-color;

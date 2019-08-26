@@ -49,7 +49,7 @@
         </li>
         <li class="dialog-list__item user-message user-message--incoming">
           <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">ООО «ДАГАЗ»</span> /
+            <span class="user-message__company">ООО«ДАГАЗ»</span> /
             <span class="user-message__position">Генеральный директор</span> /
             <span class="user-message__initials">Агафьев Петр Николаевич</span>
           </a>
@@ -79,7 +79,7 @@
         </li>
         <li class="dialog-list__item user-message user-message--incoming user-message--new">
           <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">ООО «ДАГАЗ»</span> /
+            <span class="user-message__company">ООО«ДАГАЗ»</span> /
             <span class="user-message__position">Генеральный директор</span> /
             <span class="user-message__initials">Агафьев Петр Николаевич</span>
           </a>
@@ -94,17 +94,17 @@
       </ul>
       <form class="chat__form form" method="POST" action="#">
         <label class="form__label textarea">
-          <textarea class="textarea__field" name="textarea" rows="5" placeholder="Введите текст сообщения ..."
+          <textarea class="textarea__field" name="textarea" placeholder="Введите текст сообщения ..."
                     aria-label="Текст сообщения"></textarea>
         </label>
         <div class="form__btn-wrapper">
           <label class="form__file-label btn btn--file">
             <input class="form__file-input" type="file" name="file-in-message">
-            Загрузить файл
+            <i class="fas fa-paperclip"></i>Загрузить файл
           </label>
-          <button class="form__btn form__btn--request" type="button">Создать запрос</button>
-          <button class="form__btn form__btn--signing">Запустить подписание договора</button>
-          <button class="form__submit-btn" type="submit">Отправить</button>
+          <button class="form__btn btn btn--request" type="button"><i class="far fa-file"></i>Создать запрос</button>
+          <button class="form__btn btn btn--signing"><i class="far fa-file-alt"></i>Запустить подписание договора</button>
+          <button class="form__submit-btn" type="submit">Отправить<i class="fas fa-arrow-right form__submit-btn-arrow"></i></button>
         </div>
       </form>
     </div>

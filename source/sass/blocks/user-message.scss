@@ -1,0 +1,76 @@
+.user-message {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  padding: 14px 15px 15px;
+
+  border: 1px solid $message-bg-dark;
+  border-radius: 9px;
+
+  &--outgoing {
+    margin-right: 24px;
+
+    background-color: $message-bg-dark;
+    border-top-left-radius: 0;
+  }
+
+  &--incoming {
+    margin-left: 24px;
+
+    border-bottom-right-radius: 0;
+  }
+
+  &--new {
+    position: relative;
+
+    margin-top: 46px;
+    margin-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      right: 0;
+      left: -45px;
+
+      height: 1px;
+
+      background-color: $blue;
+    }
+
+    &::after {
+      content: "НОВЫЕ СООБЩЕНИЯ";
+      position: absolute;
+      top: -30px;
+      left: 48%;
+
+      padding-right: 10px;
+      padding-left: 10px;
+
+      font-size: 10px;
+      color: $blue;
+      letter-spacing: 0.05em;
+
+      background-color: $white;
+      transform: translateX(-52%);
+    }
+  }
+}
+
+.user-message__info {
+  margin-bottom: 14px;
+
+  font-size: 12px;
+  color: $sup-text;
+}
+
+.user-message__time {
+  margin-left: auto;
+}
+
+.user-message__text {
+  flex-basis: 100%;
+  margin: 0;
+
+  line-height: 1.4em;
+}

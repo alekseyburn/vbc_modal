@@ -1,23 +1,28 @@
 .chat {
   display: flex;
+
   border-radius: 5px;
 }
 
 .chat__products {
   position: relative;
-  background-color: $main-bg;
+
   flex-basis: 24%;
+
+  background-color: $main-bg;
 }
 
 .chat__header {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  min-height: 52px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  margin: 0;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
   border-bottom: 2px solid $white;
 }
 
@@ -25,21 +30,25 @@
   position: absolute;
   top: 19px;
   right: 23px;
-  border: none;
-  background-color: transparent;
+
   width: 14px;
   height: 14px;
+
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 2px;
-    background-color: $dark-gray;
     top: 6px;
     left: -2px;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $dark-gray;
   }
 
   &::before {
@@ -52,17 +61,22 @@
 }
 
 .chat__nav {
+  margin-top: 11px;
   margin-left: 13px;
-  margin-top: 13px;
 }
 
 .chat__nav-title {
+  margin: 0 0 8px 12px;
+
   font-size: 10px;
-  margin: 0 0 8px 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .chat__messages-wrapper {
   flex-basis: 76%;
+}
+
+.chat__form {
+  padding-bottom: 20px;
 }

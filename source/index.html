@@ -27,71 +27,80 @@
               <time class="products-list__time" datetime="21.06.2019 10:40">21.06 10:40</time>
             </div>
             <div class="products-list__row">
-              <b class="products-list__name"><i class="fas fa-arrow-right"></i>Маркетплейс ВБЦ</b>
-              <a class="products-list__link" href="#" aria-label="Непрочитанные сообщения"><i class="fas fa-comment-alt"></i><span class="products-list__counter products-list__counter--message">3</span></a>
-              <a class="products-list__link" href="#" aria-label="Ошибки"><i class="fas fa-exclamation-triangle"></i><span class="products-list__counter products-list__counter--error">1</span></a>
+              <a class="products-list__name" href="#"><i class="fas fa-arrow-right"></i>Маркетплейс ВБЦ</a>
+              <a class="products-list__link" href="#" aria-label="Непрочитанные сообщения"><i
+                class="fas fa-comment-alt product-list__icon"></i><span
+                class="products-list__counter products-list__counter--message">3</span></a>
+              <a class="products-list__link" href="#" aria-label="Ошибки"><i
+                class="fas fa-exclamation-triangle product-list__icon"></i><span
+                class="products-list__counter products-list__counter--error">1</span></a>
             </div>
           </li>
         </ul>
       </div>
     </div>
     <div class="chat__messages-wrapper">
-      <ul class="chat__dialog dialog-list">
-        <li class="dialog-list__item user-message user-message--outgoing">
-          <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">Маркетплейс ВБЦ</span> /
-            <span class="user-message__position">Менеджер</span> /
-            <span class="user-message__initials">Агафьев Петр Николаевич</span>
-          </a>
-          <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
-          <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
-            который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
-        </li>
-        <li class="dialog-list__item user-message user-message--incoming">
-          <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">ООО«ДАГАЗ»</span> /
-            <span class="user-message__position">Генеральный директор</span> /
-            <span class="user-message__initials">Агафьев Петр Николаевич</span>
-          </a>
-          <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
-          <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
-            который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
-        </li>
-        <li class="dialog-list__item user-message user-message--outgoing">
-          <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">Маркетплейс ВБЦ</span> /
-            <span class="user-message__position">Менеджер</span> /
-            <span class="user-message__initials">Агафьев Петр Николаевич</span>
-          </a>
-          <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
-          <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
-            который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
-        </li>
-        <li class="dialog-list__item user-message user-message--outgoing">
-          <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">Маркетплейс ВБЦ</span> /
-            <span class="user-message__position">Менеджер</span> /
-            <span class="user-message__initials">Агафьев Петр Николаевич</span>
-          </a>
-          <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
-          <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
-            который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
-        </li>
-        <li class="dialog-list__item user-message user-message--incoming user-message--new">
-          <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
-            <span class="user-message__company">ООО«ДАГАЗ»</span> /
-            <span class="user-message__position">Генеральный директор</span> /
-            <span class="user-message__initials">Агафьев Петр Николаевич</span>
-          </a>
-          <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
-          <form class="user-message__file-form file-form" method="POST" action="#">
-            <span class="file-form__text">Загрузите такой-то документ с длинным предлинным названием</span>
-            <label class="file-form__label">
-              <input class="file-form__input" type="file" name="file">
-              Загрузить</label>
-          </form>
-        </li>
-      </ul>
+      <div class="chat__dialog">
+        <a class="chat__date-btn" href="#">29 сентября</a>
+        <ul class="dialog-list chat__list">
+          <li class="dialog-list__item user-message user-message--outgoing">
+            <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
+              <span class="user-message__company">Маркетплейс ВБЦ</span> /
+              <span class="user-message__position">Менеджер</span> /
+              <span class="user-message__initials">Агафьев Петр Николаевич</span>
+            </a>
+            <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
+            <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+              который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
+          </li>
+          <li class="dialog-list__item user-message user-message--incoming">
+            <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
+              <span class="user-message__company">ООО«ДАГАЗ»</span> /
+              <span class="user-message__position">Генеральный директор</span> /
+              <span class="user-message__initials">Агафьев Петр Николаевич</span>
+            </a>
+            <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
+            <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+              который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
+          </li>
+          <li class="dialog-list__item user-message user-message--outgoing">
+            <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
+              <span class="user-message__company">Маркетплейс ВБЦ</span> /
+              <span class="user-message__position">Менеджер</span> /
+              <span class="user-message__initials">Агафьев Петр Николаевич</span>
+            </a>
+            <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
+            <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+              который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
+          </li>
+          <li class="dialog-list__item user-message user-message--outgoing">
+            <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
+              <span class="user-message__company">Маркетплейс ВБЦ</span> /
+              <span class="user-message__position">Менеджер</span> /
+              <span class="user-message__initials">Агафьев Петр Николаевич</span>
+            </a>
+            <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
+            <p class="user-message__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+              который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
+          </li>
+          <li class="dialog-list__item user-message user-message--incoming user-message--new">
+            <a class="user-message__info" href="#" aria-label="Ссылка на профиль">
+              <span class="user-message__company">ООО«ДАГАЗ»</span> /
+              <span class="user-message__position">Генеральный директор</span> /
+              <span class="user-message__initials">Агафьев Петр Николаевич</span>
+            </a>
+            <time class="user-message__time" datetime="21.06.2019 10:40:23">10:40:23</time>
+            <form class="user-message__file-form file-form" method="POST" action="#">
+              <span class="file-form__text">Загрузите такой-то документ с длинным предлинным названием</span>
+              <label class="file-form__label">
+                <input class="file-form__input" type="file" name="file">
+                <span class="file-form__label-btn">Загрузить</span>
+              </label>
+
+            </form>
+          </li>
+        </ul>
+      </div>
       <form class="chat__form form" method="POST" action="#">
         <label class="form__label textarea">
           <textarea class="textarea__field" name="textarea" placeholder="Введите текст сообщения ..."
@@ -100,11 +109,13 @@
         <div class="form__btn-wrapper">
           <label class="form__file-label btn btn--file">
             <input class="form__file-input" type="file" name="file-in-message">
-            <i class="fas fa-paperclip"></i>Загрузить файл
+            <i class="fas fa-paperclip"></i>
+            <span class="form__file-btn">Загрузить файл</span>
           </label>
-          <button class="form__btn btn btn--request" type="button"><i class="far fa-file"></i>Создать запрос</button>
-          <button class="form__btn btn btn--signing"><i class="far fa-file-alt"></i>Запустить подписание договора</button>
-          <button class="form__submit-btn" type="submit">Отправить<i class="fas fa-arrow-right form__submit-btn-arrow"></i></button>
+          <button class="form__btn btn" type="button"><i class="far fa-file"></i>Создать запрос</button>
+          <button class="form__btn btn"><i class="far fa-file-alt"></i>Запустить подписание договора</button>
+          <button class="form__submit-btn" type="submit">Отправить<i
+            class="fas fa-arrow-right form__submit-btn-arrow"></i></button>
         </div>
       </form>
     </div>

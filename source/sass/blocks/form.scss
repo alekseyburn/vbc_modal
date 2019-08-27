@@ -1,14 +1,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
-  padding-right: 25px;
-
-  background-color: $main-bg;
 }
 
 .form__label {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .form__btn-wrapper {
@@ -17,12 +13,27 @@
 }
 
 .form__file-input {
-  display: none;
+  position: absolute;
+  z-index: -10;
+
+  width: 0.1px;
+  height: 0.1px;
+
+  opacity: 0;
+
+  &:hover ~ .form__file-btn,
+  &:focus ~ .form__file-btn {
+    color: $black;
+  }
+
+  &:active ~ .form__file-btn {
+    color: $red;
+  }
 }
 
 .form__submit-btn {
   margin-left: auto;
-  padding: 7px 7px 7px 15px;
+  padding: 7px 5px 8px 12px;
 
   font: inherit;
   font-weight: 700;
@@ -34,11 +45,28 @@
 
   background-color: $white;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $dark-gray;
+
+    & .form__submit-btn-arrow {
+      color: $white;
+    }
+  }
+
+  &:active {
+    background-color: $sup-text;
+  }
 }
 
 .form__submit-btn-arrow {
   margin-left: 8px;
+
+  color: $dark-gray;
 }

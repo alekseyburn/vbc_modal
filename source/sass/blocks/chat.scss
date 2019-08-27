@@ -1,25 +1,29 @@
 .chat {
-  display: flex;
+  position: fixed;
+  top: 50%;
 
+  display: flex;
+  max-width: $desktop-width;
+
+  background-color: $main-bg;
   border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgba($black, 0.6);
+  transform: translateY(-50%);
 }
 
 .chat__products {
   position: relative;
 
   flex-basis: 24%;
-
-  background-color: $main-bg;
 }
 
 .chat__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 52px;
   margin: 0;
+  padding: 16px 45px;
 
   font-size: 16px;
+  text-align: center;
+  color: $dark-gray;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 
@@ -28,8 +32,8 @@
 
 .chat__close-btn {
   position: absolute;
-  top: 19px;
-  right: 23px;
+  top: 18px;
+  right: 24px;
 
   width: 14px;
   height: 14px;
@@ -58,17 +62,30 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $light-gray;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $black;
+  }
 }
 
 .chat__nav {
   margin-top: 11px;
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .chat__nav-title {
-  margin: 0 0 8px 12px;
+  margin: 0 0 7px 14px;
 
   font-size: 10px;
+  color: $dark-gray;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -77,6 +94,48 @@
   flex-basis: 76%;
 }
 
+.chat__dialog {
+  position: relative;
+
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+
+  background-color: $white;
+  border-top-right-radius: 5px;
+}
+
+.chat__date-btn {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+
+  padding: 5px 13px;
+
+  font-weight: 700;
+  font-size: 11px;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $sup-text;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 4px rgba($black, 0.5);
+  transform: translateX(-50%);
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gray;
+  }
+
+  &:active {
+    color: $black;
+
+    background-color: $light-gray;
+  }
+}
+
 .chat__form {
-  padding-bottom: 20px;
+  margin-top: 15px;
+  margin-right: 25px;
+  margin-bottom: 15px;
 }

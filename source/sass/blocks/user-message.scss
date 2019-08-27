@@ -1,8 +1,7 @@
 .user-message {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 4px;
-  padding: 14px 15px 15px;
+  padding: 14px 15px 17px;
 
   border: 1px solid $message-bg-dark;
   border-radius: 9px;
@@ -23,13 +22,13 @@
   &--new {
     position: relative;
 
-    margin-top: 46px;
+    margin-top: 37px;
     margin-left: 40px;
 
     &::before {
       content: "";
       position: absolute;
-      top: -25px;
+      top: -24px;
       right: 0;
       left: -45px;
 
@@ -58,7 +57,7 @@
 }
 
 .user-message__info {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   font-size: 12px;
   color: $sup-text;
@@ -73,4 +72,5 @@
   margin: 0;
 
   line-height: 1.4em;
+  color: $black ;
 }

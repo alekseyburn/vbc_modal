@@ -21,7 +21,7 @@
 .products-list__row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   &:not(:last-child) {
     margin-bottom: 10px;
@@ -33,19 +33,24 @@
 }
 
 .products-list__number {
+  flex-grow: 1;
+  margin-right: 5px;
+
   font-weight: 700;
 }
 
 .products-list__time {
-  margin-left: auto;
-
   font-weight: 700;
 }
 
 .products-list__name {
-  font-weight: 700;
-  color: $black;
+  flex-grow: 1;
+  min-width: 92px; //чтобы стрелка была всегда на одной строке с названием
+  margin-right: 5px;
 
+  font-weight: 700;
+  text-align: center;
+  color: $black;
   &:hover,
   &:focus {
     color: $dark-gray;
@@ -69,7 +74,6 @@
 
   &:not(:last-child) {
     margin-right: 6px;
-    margin-left: auto;
   }
 
   &:hover .product-list__icon,
@@ -107,5 +111,27 @@
     color: $white;
 
     background-color: $red;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .products-list__item {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .products-list__row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .products-list__name {
+    margin-bottom: 5px;
+
+    text-align: left;
+  }
+
+  .fa-arrow-right {
+    display: none;
   }
 }

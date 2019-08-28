@@ -39,10 +39,23 @@
 
   opacity: 0;
 
-  &:hover + .file-form__label-btn,
-  &:focus + .file-form__label-btn {
+  &:hover ~ .file-form__label-btn,
+  &:focus ~ .file-form__label-btn {
     color: $black;
 
     outline: 1px solid #0078d7;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .file-form__text {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: $mobile-width) and (min-width: 320px) {
+  .file-form__text {
+    max-width: 170px;
+    margin-bottom: 10px;
   }
 }

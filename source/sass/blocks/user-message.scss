@@ -1,6 +1,7 @@
 .user-message {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 14px 15px 17px;
 
   border: 1px solid $message-bg-dark;
@@ -57,6 +58,9 @@
 }
 
 .user-message__info {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
   margin-bottom: 13px;
 
   font-size: 12px;
@@ -64,7 +68,7 @@
 }
 
 .user-message__time {
-  margin-left: auto;
+  margin-bottom: 13px;
 }
 
 .user-message__text {
@@ -72,5 +76,33 @@
   margin: 0;
 
   line-height: 1.4em;
-  color: $black ;
+  color: $black;
+}
+
+@media (max-width: $tablet-width) {
+  .user-message {
+    &--outgoing {
+      margin-right: 0;
+    }
+
+    &--incoming {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) and (min-width: 320px) {
+  .user-message {
+    flex-direction: column;
+    display: block;
+
+    &--new {
+      &::after {
+        padding-right: 1px;
+        padding-left: 1px;
+
+        text-align: center;
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 .user-message {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 14px 15px 17px;
 
   border: 1px solid $message-bg-dark;
@@ -59,7 +59,6 @@
 
 .user-message__info {
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   margin-bottom: 13px;
 
@@ -93,8 +92,6 @@
 
 @media (max-width: $mobile-width) and (min-width: 320px) {
   .user-message {
-    flex-direction: column;
-    display: block;
 
     &--new {
       &::after {
